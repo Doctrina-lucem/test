@@ -6,21 +6,21 @@
   </head>
   <body>
     <header>
-      <a><img src="https://via.placeholder.com/163x34" alt=""></a>
-      <input type="Search" placeholder="Поиск по сайту">
+      <a><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
+      <img src="img/search.svg"><input type="Search" placeholder="Поиск по сайту">
       <div>
-        <a href="">Войти </a>
+        <img src="img/user.svg"><a href="">Василий Петухов</a><a>Выйти</a>
         <ul>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+          <li><img src="img/compare.svg"><a href="">Сравнить</a></li>
+          <li><img src="img/cart.svg"><a href="">Корзина</a></li>
         </ul>
       </div>
       <nav>
-        <a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+        <a href="catalog.html">Каталог Товаров</a><img src="img/plus.svg">
         <ul>
-          <li><a href="">ДОСТАВКА</a></li>
-          <li><a href="">ГАРАНТИЯ</a></li>
-          <li><a href="">КОНТАКТЫ</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -29,20 +29,34 @@
       <ul>
         <li>
           <a href="index.html">Главная</a>
+          <img src="img/nav-arrow.svg">
         </li>
         <li>
           <a href="catalog.html">Каталог</a>
+          <img src="img/nav-arrow.svg">
         </li>
         <li>
           Моноподы для селфи
         </li>
       </ul>
       <section>
-        <h2>Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru/">
+          <h2>Фильтр:</h2>
+          <div class="price"></div>
+          <div class="color">
+            <form action="https://echo.htmlacademy.ru/">
+              <h3>Цвет</h3>
+              <ul>
+                <li>input</li>
+              </ul>
+            </form>
+          </div>
+          <div class="bluetooth"></div>
+        </form> 
       </section>
       <section>
         <h2>Сортировка:</h2>
-        <a>По цене</ф>
+        <a>По цене</a>
         <a>По типу</a>
         <a>По популярности</a>
       </section>
@@ -86,38 +100,43 @@
       </section>
     </main>
     <footer>
-        <div>
-          <a><img src="https://via.placeholder.com/163x34" alt=""></a>
-          <p>г. Москва, ул. Строителей, 15</p>
-        </div>
-        <div>
-          <ul>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Гарантия</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a href="#">Инстаграм</a>
-            </li>
-            <li>
-              <a href="#">Вконтакте</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-        <ul>
-          <li><a href="">Войти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <img href="https://via.placeholder.com/26x34">
+      <div>
+        <a><img src="img/logo-device.svg" alt=""></a>
+        <p>г. Москва, ул. Строителей, 15</p>
       </div>
-      </footer>
+      <div>
+        <ul>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/fb.svg" alt="Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/twitter.svg"alt="Твиттер"></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        
+        <ul>
+          <li><img src="img/user.svg"><a href="">Валентин Петухов</a><a>Выйти</a></li>
+          <li><img src="img/compare.svg"><a href="">Сравнить</a></li>
+          <li><img src="img/cart.svg"><a href="">Корзина</a></li>
+        </ul>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <img src="img/logo-html.svg">
+      </a>
+    </div>
+    </footer>
     </body>
   </body>
 </html>
