@@ -7,16 +7,35 @@
   <body>
     <header>
       <a><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
-      <img src="img/search.svg"><input type="Search" placeholder="Поиск по сайту">
+      <div class="search-field">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg>
+        <input type="Search" placeholder="Поиск по сайту">
+      </div>
       <div>
-        <img src="img/user.svg"><a href="">Войти</a>
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+          Войти
+        </a>
         <ul>
-          <li><img src="img/compare.svg"><a href="">Сравнить</a></li>
-          <li><img src="img/cart.svg"><a href="">Корзина</a></li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+            Корзина
+            </a>
+          </li>
         </ul>
       </div>
       <nav>
-        <a href="catalog.html">Каталог Товаров</a><img src="img/plus.svg">
+        <a href="catalog.html">
+          Каталог Товаров
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>
+        </a>
         <ul>
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
@@ -26,8 +45,8 @@
     </header>
     <main>
       <section class="slider">
-        <article class="slide1">
-          <img src="/img/slider-1 1.jpg" width="384" height="486" alt="">
+        <article class="main-slide">
+          <img src="/img/slider-1.jpg" width="384" height="486" alt="">
           <h2>Делай селфи, как Бен Стиллер! </h2>
           <p>
             Самая длинная палка для селфи доступна в нашем магазине. 
@@ -46,8 +65,8 @@
             </li>
           </ul>
         </article>
-        <article class="slide2">
-          <img src="https://via.placeholder.com/384x486" alt="">
+        <article class="main-slide">
+          <img src="/img/slider-2.png" alt="">
           <h2>Худеем правильно! </h2>
           <p>
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -56,8 +75,8 @@
           <h3>48 часов</h3>
           <p>Без подзарядки</p>
         </article>
-        <article class="slide3">
-          <img src="https://via.placeholder.com/384x486" alt="">
+        <article class="main-slide">
+          <img src="img/slider-3.png" alt="">
           <h2>Порхает как бабочка, жалит как пчела!</h2>
           <p>
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -78,37 +97,37 @@
           <ul>
           <li>
             <a href="">
-              <img src="https://via.placeholder.com/160x160">
+              <img src="img/popular-1.svg">
               <p>Виртуальная реальность</p>
             </a>
           </li>
           <li>
               <a href="catalog.html" >
-                <img src="https://via.placeholder.com/160x160">
+                <img src="img/popular-2.svg">
                 <p>Моноподы для селфи</p>
               </a>
           </li>
           <li>
             <a href="catalog.html" >
-              <img src="https://via.placeholder.com/160x160">
+              <img src="img/popular-3.svg">
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li>
             <a href="catalog.html" >
-              <img src="https://via.placeholder.com/160x160">
+              <img src="img/popular-4.svg">
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li>
             <a href="catalog.html" >
-              <img src="https://via.placeholder.com/160x160">
+              <img src="img/popular-5.svg">
               <p>Умные часы</p>
             </a>
           </li>
           <li>
             <a href="catalog.html" >
-              <img src="https://via.placeholder.com/160x160">
+              <img src="img/popular-6.svg">
               <p>Квадрокоптеры</p>
             </a>
             </li>
@@ -133,7 +152,7 @@
                 подъезду совершенно бесплатно! Ведь мы неплохо 
                 заработаем, поднимая его на ваш этаж.
               </p>
-                <img src="https://via.placeholder.com/160x160" alt="">
+                <img src="img/delivery.svg" alt="">
             </div>
             <div class="slide2">
               <h2>Гарантии</h2>
@@ -142,7 +161,7 @@
                 не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
               </p>
-                <img src="https://via.placeholder.com/160x160" alt="">
+                <img src="img/warranty.svg" alt="">
             </div>
             <div class="slide3">
               <h2>Кредит</h2>
@@ -151,14 +170,14 @@
                 подберут для вас наиболее выгодные 
                 условия кредита. Выгодные для нашего банка, разумеется.
               </p>
-                <img src="https://via.placeholder.com/160x160" alt="">
+                <img src="img/credit.svg" alt="">
             </div>
         </article>
         <div class="brands">
-          <img src="https://via.placeholder.com/260x100">
-          <img src="https://via.placeholder.com/260x100">
-          <img src="https://via.placeholder.com/260x100">
-          <img src="https://via.placeholder.com/260x100">
+          <img src="img/logo-1.png">
+          <img src="img/logo-2.png">
+          <img src="img/logo-3.png">
+          <img src="img/logo-4.png">
         </div>
       </section>
       <section>
@@ -178,13 +197,13 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <img href
+        <img src="img/map 1.png" alt="Карта офиса по адресу улица Строителей, 15"
         <button type="button">напишите нам</button>
       </section>
     </main>
     <footer>
       <div>
-        <a><img src="img/logo-device.svg" alt=""></a>
+        <a><img src="img/logo-device.svg" width="163" height="35" alt=""></a>
         <p>г. Москва, ул. Строителей, 15</p>
       </div>
       <div>
@@ -208,11 +227,25 @@
         </ul>
       </div>
       <div>
-        
         <ul>
-          <li><img src="img/user.svg"><a href="">Войти</a></li>
-          <li><img src="img/compare.svg"><a href="">Сравнить</a></li>
-          <li><img src="img/cart.svg"><a href="">Корзина</a></li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+              Войти
+            </a> 
+          </li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+            Корзина
+            </a>
+          </li>
         </ul>
       <p>Тел.: +7 (495) 495-95-95</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
