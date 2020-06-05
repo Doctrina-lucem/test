@@ -36,6 +36,16 @@
           Каталог Товаров
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>
         </a>
+        <div class="visually-hidden">
+          <a href="">
+            Виртуальная реальность
+            Фитнес-браслеты
+            Квадрокоптер<br>
+            Моноподы для селфи
+            Умные часы<br>
+            Экшн-камеры
+          </a>
+        </div>
         <ul>
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
@@ -197,8 +207,11 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
           проверить работоспособность покупки. Всякое бывает.
         </p>
-        <img src="img/map 1.png" alt="Карта офиса по адресу улица Строителей, 15"
+        <img src="img/map 1.png" alt="Карта офиса по адресу улица Строителей, 15">
         <button type="button">напишите нам</button>
+        <div class="visually-hidden">
+          <img src="img/map popup.png" alt="Карта офиса по адресу улица Строителей, 15">
+        </div>
       </section>
     </main>
     <footer>
@@ -253,5 +266,19 @@
       </a>
     </div>
     </footer>
+    <section class="visually-hidden writeus">
+      <a class="closewindow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
+      </a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="username">Ваше имя:</label>
+        <input type="text" name="Name" id="username" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="email" placeholder="email@example.com">
+        <label for="letter">Текст письма:</label>
+        <input type="text" name="letterText" id="letter" placeholder="В свободной форме">
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
