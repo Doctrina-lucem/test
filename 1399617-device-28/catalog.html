@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header>
+      <a><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
+      <div class="search-field">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg>
+        <input type="Search" placeholder="Поиск по сайту">
+      </div>
+      <div class="username">
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+          Валентин Петухов
+        </a>
+        <a href="">Выйти</a>
+      </div>
+      <ul>
+        <li>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+            Сравнить
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+          Корзина
+          </a>
+        </li>
+      </ul>
+    </div>
+      <nav>
+        <a href="catalog.html">Каталог Товаров</a><img src="img/plus.svg">
+        <div class="visually-hidden">
+          <a href="">
+            Виртуальная реальность
+            Фитнес-браслеты
+            Квадрокоптер<br>
+            Моноподы для селфи
+            Умные часы<br>
+            Экшн-камеры
+          </a>
+        </div>
+        <ul>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+          <img src="img/nav-arrow.svg">
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+          <img src="img/nav-arrow.svg">
+        </li>
+        <li>
+          Моноподы для селфи
+        </li>
+      </ul>
+      <section>
+        <h2>Фильтр:</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="dark" id="filter-dark" checked>
+                  <label for="filter-dark">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="white" id="filter-white">
+                  <label for="filter-white">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Bluetooth" id="filter-blue" checked>
+                  <label for="filter-blue">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="red" id="filter-red" checked>
+                  <label for="filter-red">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="pink" id="filter-pink">
+                  <label for="filter-pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="filter-bluetooth" id="filter-yes" checked>
+                  <label for="filter-yes">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" name="filter-bluetooth" id="filter-no" >
+                  <label for="filter-no">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+      </section>
+      <section>
+        <h2>Сортировка:</h2>
+        <a>По цене</a>
+        <a>По типу</a>
+        <a>По популярности</a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+        </a>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <a href="product.html">
+              <img src="/img/item-1.jpg">
+              <h3>Любительская селфи-палка</h3>
+              <p>500 ₽</p>
+            </a>
+          </li>    
+          <li>
+            <a href="product.html">
+              <img src="/img/item-2.jpg">
+              <h3>Профессиональная селфи-палка </h3>
+              <p>1 500 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <img src="/img/item-3.jpg">
+              <h3>Непотопляемая селфи-палка</h3>
+              <p>2 500 ₽</p>
+            </a>
+          </li>
+          <li>
+            <a href="product.html">
+              <img src="/img/item-4.jpg">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+              <p>4 900 ₽</p>
+            </a>
+          </li>
+      </section>
+      <section>
+        <a href="">Назад</a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">Вперед</a>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a><img src="img/logo-device.svg" width="163" height="35" alt=""></a>
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/twitter.svg"alt="Твиттер"></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <div class="username">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+                Валентин Петухов
+              </a>
+              <a href="">Выйти</a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+            Корзина
+            </a>
+          </li>
+        </ul>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <img src="img/logo-html.svg">
+      </a>
+    </div>
+    </footer>
+    </body>
+  </body>
+</html>
