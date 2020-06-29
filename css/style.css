@@ -14,9 +14,9 @@
 
   font-family: 'Gilloryextrabold';
 
-  src: url(../fonts/gilroyextrabold.woff);
+  src: url(../fonts/gilroyextrabold.woff),
 
-  src: url(../fonts//gilroyextrabold.woff2);
+    url(../fonts//gilroyextrabold.woff2);
 
   font-weight: bold;
 
@@ -27,27 +27,27 @@
 
   font-family: 'Gillorylight';
 
-  src: url(../fonts//gilroylight.woff);
+  src: url(../fonts//gilroylight.woff),
 
-  src: url(../fonts/gilroylight.woff2);
+    url(../fonts/gilroylight.woff2);
 
   font-weight: normal;
 
   font-style: normal;
 }
 
+Arial
 /* Global */
 
 body {
-  min-width: 1180px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-position: top center;
-  background-repeat: no-repeat;
+  line-height: 30px;
 }
 
 a {
@@ -58,6 +58,29 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1160px;
+
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .catalog-popup,
@@ -75,27 +98,74 @@ img {
 }
 
 .button {
-  font-family: 'Gilloryextrabold', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 160px;
+  border: none;
+
+  padding-top: 10px;
+  padding-bottom: 9px;
+
+  font-family: 'Gilloryextrabold';
   font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+
+  text-align: center;
+  color: var(--basic-black);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.5px;
+  background-image: linear-gradient(to bottom, transparent 40%,
+      var(--special-yellow-dark) 42.5%,
+      var(--special-yellow-dark) 57.5%,
+      transparent 60%);
+  background-color: transparent;
+}
+
+.button:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.button:focus,
+.button:active {
+  opacity: 0.3;
 }
 
 .header {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   background-color: var(--special-yellow);
   text-decoration: none;
 }
 
 .user-navigation {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+
 }
 
 .user-navigation-wrapper {
   list-style: none;
+  padding: 0;
+  margin-right: 60px;
+  margin-left: auto;
+  padding-left: 40px;
+}
+
+.user-navigation-wrapper li {
+  display: inline;
+  padding-left: 40px;
+
+}
+
+.user-d {
+  text-align: end;
+  padding-right: 120px;
 }
 
 .user-navigation a:hover {
@@ -107,18 +177,31 @@ img {
 }
 
 .main-navigation {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.main-navigation-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .main-navigation-footer a {
   color: var(--basic-white)
 }
 
 .main-navigation-wrapper {
   list-style: none;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.main-navigation-wrapper li{
+  display: inline;
 }
 
 .main-navigation a:hover {
@@ -130,21 +213,36 @@ img {
 }
 
 .main-slide {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-size: 47px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.slide-info {
+  /*margin-left: 127px;*/
+}
+
+.slide-btn {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .main-slide-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
 
 .main-slide-wrapper {
-  font-family: 'Gillorylight', sans-serif;
+  font-family: 'Gillorylight', Arial, sans-serif;
   list-style: none;
   font-weight: normal;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main-slide-stats {
@@ -157,18 +255,49 @@ img {
 }
 
 .products-banner a {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   color: var(--basic-black);
 }
 
+.products-banner-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.product-banner-image {
+  background-color: var(--special-yellow);
+
+  display: flex;
+  width: 160px;
+  height: 160px;
+  justify-content: center;
+}
+
+.product-banner a:hover {
+  background-color: var(--special-yellow-dark);
+}
+.product-banner-image a:focus {
+  background-color: var(--special-yellow-dark);
+  
+}
+.product-banner a :focus{
+  opacity: 0.3;
+}
 .user-history {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: var(--basic-black);
+}
+
+.product-banner {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .user-history a {
@@ -199,15 +328,41 @@ img {
 .social-networks a:hover {
   opacity: 0.6;
 }
+.social-networks li{
+  display: inline;
 
+}
+.social-networks {
+  display: flex;
+  justify-content: center;
+}
 .social-networks a:focus {
   opacity: 0.1;
 }
-
+.user-navigation-footer li{
+  display: inline;
+  margin-right: 40px;
+}
+.user-navigation-footer{
+  text-align: right;
+  margin-top: 46px;
+}
 .user-navigation-footer a {
   color: var(--basic-white);
   opacity: 0.7;
 }
+.footer-grid{
+  position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 55px 0;
+    align-items: center;
+}
+.html-logo{
+  margin: 0 auto;
+  
+}
+
 
 .user-navigation-footer a:hover {
   opacity: 1;
@@ -218,39 +373,46 @@ img {
 }
 
 .service-slide-title {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   letter-spacing: 0.2em;
 }
 
 .service-slide-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.1em;
 }
-
+.company-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .company-info-title {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   letter-spacing: 0.2em;
 }
 
 .company-info-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
-
+.company-info-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 .aboutus-wrapper {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-size: 16px;
+  list-style: none;
 }
 
 .filter {
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -262,14 +424,14 @@ img {
 }
 
 .filter label {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
 
 .sorting h2 {
   text-transform: uppercase;
-  font-family: 'Gilloryextrabold', sans-serif;
+  font-family: 'Gilloryextrabold', Arial sans-serif;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.1em;
