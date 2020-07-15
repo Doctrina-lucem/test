@@ -11,7 +11,7 @@
     <header class="header">
       <div class="container">
         <div class="header-content">
-          <a class="logo"><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
+          <a class="logo" href="index.html"><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
           <div class="user-navigation">
             <form class="header-search">
               <label class="visually-hidden" for="search-field"></label>
@@ -19,7 +19,7 @@
               <button class="search-find-button" type="submit">Найти</button>
             </form>
             <ul class="user-navigation-wrapper">
-              <li class="header-user">
+              <li class="header-user-main">
                 <a href="" >
                   <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66667C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66667C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z" fill="black"/>
@@ -71,7 +71,7 @@
               </a>
             </div>
             </a>
-              <ul class="catalog-popup">
+              <ul class="catalog-popup-hide">
                 <li>
                   <ul>
                     <li>
@@ -115,7 +115,7 @@
     <main>
       <section class="slider">
         <div class="slider-before container">
-          <article class="main-slide  ">
+          <article class="main-slide main-slide-first slide-active">
             <img class="main-slide-image1" src="img/slider-1.png" width="384" height="486" alt="">
             <div class="slide-info"><h2>Делай селфи,<br> как Бен Стиллер! </h2>
               <p class="main-slide-text">
@@ -139,7 +139,7 @@
               </ul>
             </div>
           </article>
-          <article class="main-slide visually-hidden ">
+          <article class="main-slide main-slide-second ">
             <img class="main-slide-image2" src="img/slider-2.png" alt="">
             <div class="slide-info"><h2>Худеем<br> правильно! </h2>
               <p class="main-slide-text">
@@ -154,7 +154,7 @@
               </ul>
             </div>
           </article>
-          <article class="main-slide visually-hidden">
+          <article class="main-slide main-slide-last ">
             <img class="main-slide-image3" src="img/slider-3.png" alt="">
             <div class="slide-info">
               <h2>Порхает как бабочка, жалит как пчела!</h2>
@@ -179,22 +179,22 @@
       <section class="products-banner container">
           <ul class="products-banner-wrapper">
             <li class="product-banner">
-              <a href=""><span class="product-banner-image"><img src="img/popular-1.svg" alt=""></span>Виртуальная<br> реальность</a>
+              <a href="catalog.html"><span class="product-banner-image"><img src="img/popular-1.svg" alt=""></span>Виртуальная<br> реальность</a>
             </li>
             <li class="product-banner">
-              <a href=""><span class="product-banner-image"><img src="img/popular-2.svg" alt=""></span>Моноподы<br> для селфи</a>
+              <a href="catalog.html"><span class="product-banner-image"><img src="img/popular-2.svg" alt=""></span>Моноподы<br> для селфи</a>
             </li>
             <li class="product-banner">
-              <a href=""><span class="product-banner-image"><img src="img/popular-3.svg" alt=""></span>Экшн-камеры</a>
+              <a href="catalog.html"><span class="product-banner-image"><img src="img/popular-3.svg" alt=""></span>Экшн-камеры</a>
             </li>
             <li class="product-banner no-letter-spacing">
-              <a href=""><span class="product-banner-image"><img src="img/popular-4.svg" alt=""></span>Фитнес-браслеты</a>
+              <a href="catalog.html"><span class="product-banner-image"><img src="img/popular-4.svg" alt=""></span>Фитнес-браслеты</a>
             </li>
             <li class="product-banner">
-              <a href=""><span class="product-banner-image"><img src="img/popular-5.svg" alt=""></span>Умные часы</a>
+              <a href="catalog.html"><span class="product-banner-image"><img src="img/popular-5.svg" alt=""></span>Умные часы</a>
             </li>
             <li class="product-banner">
-              <a href=""><span class="product-banner-image"><img src="img/popular-6.svg" alt=""></span>Квадрокоптеры</a>
+              <a href="catalog.html"><span class="product-banner-image"><img src="img/popular-6.svg" alt=""></span>Квадрокоптеры</a>
             </li>
           </ul>
       </section>
@@ -352,7 +352,7 @@
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <p class="foooter-phone">Тел.: +7 (495) 495-95-95</p>
+        <a href="tel:+74954959595" class="footer-phone">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-last-info footer-grid">
         <ul class="social-networks">
@@ -379,18 +379,25 @@
     </div>
     </footer>
     <section class="write-us-popup">
-      <a class="close-window">
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
-      </a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="username">Ваше имя:</label>
-        <input type="text" name="Name" id="username" placeholder="Имя Фамилия">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="email" placeholder="email@example.com">
-        <label for="letter">Текст письма:</label>
-        <input type="text" name="letterText" id="letter" placeholder="В свободной форме">
-        <button type="submit">Отправить</button>
+      <form action="https://echo.htmlacademy.ru" method="post" class="write-us-popup-form">
+        <label for="username">Ваше имя:
+          <input type="text" name="Name" id="username" placeholder="Имя Фамилия">
+        </label>
+        
+        <label for="email">Ваш e-mail:
+          <input type="email" name="e-mail" id="email" placeholder="email@example.com">
+        </label>
+        
+        <label for="letter">Текст письма:
+          <textarea type="text" name="letterText" id="letter" placeholder="В свободной форме"></textarea>
+        </label>
+        <button type="submit" class="button">Отправить</button>
+        <a hresf="" class="close-window">
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
+        </a>
       </form>
+      
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

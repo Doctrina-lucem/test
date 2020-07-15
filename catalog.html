@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="header ">
       <div class="container">
         <div class="header-content">
-          <a class="logo"><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
+          <a class="logo" href="index.html"><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
           <div class="user-navigation">
             <form class="header-search">
               <label class="visually-hidden" for="search-field"></label>
@@ -24,7 +24,8 @@
                   <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66667C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66667C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z" fill="black"/>
                   </svg>
-                  Войти
+                  <a class="logined-user">Валентин Петухов</a>
+                  <a>Войти</a>
                 </a>
               </li>
               <li>
@@ -71,7 +72,7 @@
               </a>
             </div>
             </a>
-              <ul class="catalog-popup">
+              <ul class="catalog-popup-hide">
                 <li>
                   <ul>
                     <li>
@@ -114,16 +115,16 @@
     </header>
     <main>
       <section>
-        <div class="container">
-          <h1>Моноподы для селфи</h1>
+        <div class="catalog-name container">
+          <h1 class="catalog-title">Моноподы для селфи</h1>
           <ul class="user-history">
             <li>
               <a href="index.html">Главная</a>
-              <img src="img/nav-arrow.svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg>
             </li>
             <li>
-              <a href="catalog.html">Каталог</a>
-              <img src="img/nav-arrow.svg">
+              <a href="catalog.html">Каталог товаров</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg>
             </li>
             <li>
               <a>Моноподы для селфи</a>
@@ -217,34 +218,58 @@
               <li>
                 <a href="product.html">
                   <img src="img/item-1.jpg">
-                  <h3>Любительская селфи-палка</h3>
-                  <p>500 ₽</p>
                 </a>
+                <div class="product-hover-hide">
+                  <button class="button">В корзину</button>
+                  <a class="to-compare">Добавить к сравнению</a>
+                </div>
+                <div class="catalog-prodeuct-name">
+                  <h3>Любительская селфи-палка</h3>
+                  <p>500 руб</p>
+                </div>
               </li>
               <li>
                 <a href="product.html">
                   <img src="img/item-2.jpg">
-                  <h3>Профессиональная селфи-палка </h3>
-                  <p>1 500 ₽</p>
                 </a>
+                <div class="product-hover-hide">
+                  <button class="button">В корзину</button>
+                  <a class="to-compare">Добавить к сравнению</a>
+                </div>
+                <div class="catalog-prodeuct-name">
+                  <h3>Профессиональная<br> селфи-палка</h3>
+                  <p>1 500 руб</p>
+                </div>
               </li>
               <li>
                 <a href="product.html">
                   <img src="img/item-3.jpg">
-                  <h3>Непотопляемая селфи-палка</h3>
-                  <p>2 500 ₽</p>
                 </a>
+                <div class="product-hover-hide">
+                  <button class="button">В корзину</button>
+                  <a class="to-compare">Добавить к сравнению</a>
+                </div>
+                <div class="catalog-prodeuct-name">
+                  <h3>Непотопляемая селфи-палка</h3>
+                  <p>2 500 руб</p>
+                </div>
               </li>
               <li>
                 <a href="product.html">
                   <img src="img/item-4.jpg">
-                  <h3>Селфи-палка «Следуй за мной»</h3>
-                  <p>4 900 ₽</p>
                 </a>
+                <div class="product-hover-hide">
+                  <button class="button">В корзину</button>
+                  <a class="to-compare">Добавить к сравнению</a>
+                </div>
+                <div class="catalog-prodeuct-name">
+                  <h3>Селфи-палка «Следуй за мной»</h3>
+                  <p>4 900 руб</p>
+                </div>
               </li>
             </ul>
             </div>
-            <p>fff</p>
+            <p></p>
             <div class="catalog-navigation">
               <a class="old-page" href="">Назад</a>
               <ul class="catalog-navigation-wrapper">
@@ -272,7 +297,8 @@
                 <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.49996 2.33325C7.69704 2.33325 8.66663 3.37742 8.66663 4.66659C8.66663 5.95575 7.69704 6.99992 6.49996 6.99992C5.30288 6.99992 4.33329 5.95575 4.33329 4.66659C4.33329 3.37742 5.30288 2.33325 6.49996 2.33325ZM6.49996 11.6666C6.49996 11.6666 10.8333 11.6666 10.8333 10.4999C10.8333 9.09992 8.72079 7.58325 6.49996 7.58325C4.27913 7.58325 2.16663 9.09992 2.16663 10.4999C2.16663 11.6666 6.49996 11.6666 6.49996 11.6666Z" fill="#FFC600"/>
                 </svg>
-                Войти
+                <a class="logined-user">Валентин Петухов</a>
+                <a>Войти</a>
               </a>
             </li>
             <li>
@@ -317,7 +343,7 @@
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <p class="foooter-phone">Тел.: +7 (495) 495-95-95</p>
+        <a href="tel:+74954959595" class="footer-phone">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-last-info footer-grid">
         <ul class="social-networks">
