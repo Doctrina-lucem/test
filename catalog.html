@@ -26,8 +26,8 @@
                 <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66667C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66667C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z"
-                    fill="black" />
+                  d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66667C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66667C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z"
+                  fill="black" />
                 </svg>
                 <span class="logined-user">Валентин Петухов</span>
                 Выйти
@@ -56,7 +56,7 @@
               <a href="">
                 <svg class="header-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
+                  <g clip-path="url(#clip1)">
                     <path
                       d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
                       fill="#231F20" />
@@ -66,12 +66,11 @@
                     <line x1="9.39233" y1="4.95831" x2="22.8389" y2="4.95831" stroke="black" />
                   </g>
                   <defs>
-                    <clipPath id="clip0">
+                    <clipPath id="clip1">
                       <rect width="10" height="10" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
-
                 Корзина
               </a>
             </li>
@@ -85,7 +84,6 @@
                 <path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z" /></svg>
             </a>
           </div>
-          </a>
           <ul class="catalog-popup-hide">
             <li>
               <ul>
@@ -263,57 +261,49 @@
           </div>
           <div>
             <ul class="catalog-list">
-              <li>
-                <a href="product.html">
-                  <img src="img/item-1.jpg">
-                </a>
+              <li class="product-item">
+                  <img src="img/item-1.jpg" width="360" height="380" alt="Продукт1">
                 <div class="product-hover-hide">
                   <button class="button">В корзину</button>
                   <a class="to-compare">Добавить к сравнению</a>
                 </div>
-                <div class="catalog-prodeuct-name">
+                <a href="product.html" class="catalog-prodeuct-name">
                   <h3>Любительская селфи-палка</h3>
                   <p>500 руб</p>
-                </div>
-              </li>
-              <li>
-                <a href="product.html">
-                  <img src="img/item-2.jpg">
                 </a>
+              </li>
+              <li class="product-item">
+                  <img src="img/item-2.jpg" width="360" height="380" alt="Продукт2">
                 <div class="product-hover-hide">
                   <button class="button">В корзину</button>
                   <a class="to-compare">Добавить к сравнению</a>
                 </div>
-                <div class="catalog-prodeuct-name">
+                <a href="product.html" class="catalog-prodeuct-name">
                   <h3>Профессиональная<br> селфи-палка</h3>
                   <p>1 500 руб</p>
-                </div>
-              </li>
-              <li>
-                <a href="product.html">
-                  <img src="img/item-3.jpg">
                 </a>
+              </li>
+              <li class="product-item">
+                  <img src="img/item-3.jpg" width="360" height="380" alt="Продукт3">
                 <div class="product-hover-hide">
                   <button class="button">В корзину</button>
                   <a class="to-compare">Добавить к сравнению</a>
                 </div>
-                <div class="catalog-prodeuct-name">
+                <a href="product.html" class="catalog-prodeuct-name">
                   <h3>Непотопляемая селфи-палка</h3>
                   <p>2 500 руб</p>
-                </div>
-              </li>
-              <li>
-                <a href="product.html">
-                  <img src="img/item-4.jpg">
                 </a>
+              </li>
+              <li class="product-item">
+                  <img src="img/item-4.jpg" width="360" height="380" alt="Продукт4">
                 <div class="product-hover-hide">
                   <button class="button">В корзину</button>
                   <a class="to-compare">Добавить к сравнению</a>
                 </div>
-                <div class="catalog-prodeuct-name">
+                <a href="product.html" class="catalog-prodeuct-name">
                   <h3>Селфи-палка «Следуй за мной»</h3>
                   <p>4 900 руб</p>
-                </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -358,14 +348,14 @@
             <a href="">
               <svg class="header-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
+                <g clip-path="url(#clip2)">
                   <path
                     d="M2.91675 5.36675H4.66675V11.0834H2.91675V5.36675ZM6.18342 2.91675H7.81675V11.0834H6.18342V2.91675ZM9.45008 7.58342H11.0834V11.0834H9.45008V7.58342Z"
                     fill="#FFC600" />
                   <line x1="0.141846" y1="7.13989" x2="-210.461" y2="7.13987" stroke="black" />
                 </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath id="clip2">
                     <rect width="14" height="14" fill="white" />
                   </clipPath>
                 </defs>
@@ -377,7 +367,7 @@
             <a href="">
               <svg class="header-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
+                <g clip-path="url(#clip3)">
                   <path
                     d="M9.86215 2.52161C9.79278 2.43982 9.69341 2.39307 9.58927 2.39307H7.65774V3.41871C7.65774 3.88999 7.25359 4.27341 6.75684 4.27341C6.26008 4.27341 5.85593 3.88999 5.85593 3.41871V2.39307H4.05413V3.41871C4.05413 3.88999 3.64999 4.27341 3.15323 4.27341C2.65648 4.27341 2.25233 3.88999 2.25233 3.41871V2.39307H0.32089C0.216656 2.39307 0.117286 2.43982 0.0479169 2.52161C-0.0215425 2.60341 -0.0544254 2.71247 -0.0425335 2.82136L0.605665 8.78452C0.617737 9.45683 1.14179 9.9999 1.78431 9.9999H8.12584C8.76828 9.9999 9.29233 9.45683 9.30449 8.78443L9.95269 2.82127C9.96449 2.71247 9.93161 2.60341 9.86215 2.52161Z"
                     fill="#FFC600" />
@@ -387,7 +377,7 @@
                   <line x1="9.39233" y1="4.95825" x2="22.8389" y2="4.95825" stroke="black" />
                 </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath id="clip3">
                     <rect width="10" height="10" fill="white" />
                   </clipPath>
                 </defs>
@@ -424,8 +414,8 @@
             </a>
           </li>
         </ul>
-        <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="logo">
-          <img src="img/logo-html.svg">
+        <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" >
+          <img src="img/logo-html.svg" alt="Логотип Академии">
         </a>
       </div>
     </div>
