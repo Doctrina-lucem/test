@@ -1,219 +1,267 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-  </head>
-  <body class="page-body">
-    <header class="header ">
-      <div class="container">
-        <div class="header-content">
-          <a class="logo" href="index.html"><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
-          <div class="user-navigation">
-            <form class="header-search">
-              <label class="visually-hidden" for="search-field"></label>
-              <input type="search" class="search-field" name="search" id="search-field" placeholder="Поиск по сайту">
-              <button class="search-find-button" type="submit">Найти</button>
-            </form>
-            <ul class="user-navigation-wrapper">
-              <li class="header-user">
-                <a href="" >
-                  <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66667C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66667C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z" fill="black"/>
-                  </svg>
-                  <a class="logined-user">Валентин Петухов</a>
-                  <a>Войти</a>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="header-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                    <path d="M2.91675 5.36666H4.66675V11.0833H2.91675V5.36666ZM6.18342 2.91666H7.81675V11.0833H6.18342V2.91666ZM9.45008 7.58332H11.0834V11.0833H9.45008V7.58332Z" fill="black"/>
-                    <line x1="0.141846" y1="7.13997" x2="-210.461" y2="7.13995" stroke="black"/>
-                    </g>
-                    <defs>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a class="logo" href="index.html"><img src="img/logo-device.svg" alt="" width="163" height="35"></a>
+        <div class="user-navigation">
+          <form class="header-search">
+            <label class="visually-hidden" for="search-field"></label>
+            <input type="search" class="search-field" name="search" id="search-field" placeholder="Поиск по сайту">
+            <button class="search-find-button" type="submit">Найти</button>
+          </form>
+          <ul class="user-navigation-wrapper">
+            <li class="header-user">
+              <a href="profile.html">
+                <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66667C8.66663 5.95583 7.69704 7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66667C4.33329 3.3775 5.30288 2.33333 6.49996 2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079 7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z"
+                    fill="black" />
+                </svg>
+                <span class="logined-user">Валентин Петухов</span>
+                Выйти
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="header-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M2.91675 5.36666H4.66675V11.0833H2.91675V5.36666ZM6.18342 2.91666H7.81675V11.0833H6.18342V2.91666ZM9.45008 7.58332H11.0834V11.0833H9.45008V7.58332Z"
+                      fill="black" />
+                    <line x1="0.141846" y1="7.13997" x2="-210.461" y2="7.13995" stroke="black" />
+                  </g>
+                  <defs>
                     <clipPath id="clip0">
-                    <rect width="14" height="14" fill="white"/>
+                      <rect width="14" height="14" fill="white" />
                     </clipPath>
-                    </defs>
-                    </svg>
-                  Сравнить
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="header-icon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0)">
-                    <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#231F20"/>
-                    <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" fill="#231F20"/>
-                    <line x1="9.39233" y1="4.95831" x2="22.8389" y2="4.95831" stroke="black"/>
-                    </g>
-                    <defs>
+                  </defs>
+                </svg>
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="header-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
+                      fill="#231F20" />
+                    <path
+                      d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
+                      fill="#231F20" />
+                    <line x1="9.39233" y1="4.95831" x2="22.8389" y2="4.95831" stroke="black" />
+                  </g>
+                  <defs>
                     <clipPath id="clip0">
-                    <rect width="10" height="10" fill="white"/>
+                      <rect width="10" height="10" fill="white" />
                     </clipPath>
-                    </defs>
-                    </svg>
+                  </defs>
+                </svg>
 
                 Корзина
-                </a>
-              </li>
-            </ul>
-          </div>
-          <nav class="main-navigation catalog-header-margin">
-            <div>
-              <a href="catalog.html">
-                Каталог Товаров
-                <svg class="catalog-plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>
               </a>
-            </div>
-            </a>
-              <ul class="catalog-popup-hide">
-                <li>
-                  <ul>
-                    <li>
-                      <a>Виртуальная реальность</a>
-                    </li>
-                    <li>
-                      <a>Моноподы для селфи</a>
-                    </li>
-                    <li>
-                      <a>Экшн-камеры</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      <a>Фитнес-браслеты</a>
-                    </li>
-                    <li>
-                      <a>Умные часы</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li>
-                      <a>Квадрокоптер</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            <ul class="main-navigation-wrapper">
-              <li><a href="">Доставка</a></li>
-              <li><a href="">Гарантия</a></li>
-              <li><a href="">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="catalog-name container">
-          <h1 class="catalog-title">Моноподы для селфи</h1>
-          <ul class="user-history">
-            <li>
-              <a href="index.html">Главная</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg>
-            </li>
-            <li>
-              <a href="catalog.html">Каталог товаров</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7"><path d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/></svg>
-            </li>
-            <li>
-              <a>Моноподы для селфи</a>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="catalog">
-        <div class="catalog-top">
-          <div class="container catalog-grid">
-            <h2 class="filter-top">Фильтр:</h2>
-            <div class="sorting">
-              <h2>Сортировка:</h2>
-              <ul class="sorting-list">
+        <nav class="main-navigation catalog-header-margin">
+          <div>
+            <a class="catalog-popup-open" href="catalog.html">
+              Каталог Товаров
+              <svg class="catalog-plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z" /></svg>
+            </a>
+          </div>
+          </a>
+          <ul class="catalog-popup-hide">
+            <li>
+              <ul>
                 <li>
-                  <a class="enable" href="">По цене</a>
+                  <a>Виртуальная реальность</a>
                 </li>
                 <li>
-                  <a href="">По типу</a>
+                  <a>Моноподы для селфи</a>
                 </li>
                 <li>
-                  <a href="">По популярности</a>
-                </li>
-              </ul>
-              <ul class="sorting-btn">
-                <li>
-                  <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
-                  </a>
+                  <a>Экшн-камеры</a>
                 </li>
               </ul>
-            </div>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a>Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a>Умные часы</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li>
+                  <a>Квадрокоптер</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="main-navigation-wrapper">
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Гарантия</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="catalog-name container">
+        <h1 class="catalog-title">Моноподы для селфи</h1>
+        <ul class="user-history">
+          <li>
+            <a href="index.html">Главная</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
+              <path
+                d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z" />
+            </svg>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
+              <path
+                d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z" />
+            </svg>
+          </li>
+          <li>
+            <a>Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog-top">
+        <div class="container catalog-grid">
+          <h2 class="filter-top">Фильтр:</h2>
+          <div class="sorting">
+            <h2>Сортировка:</h2>
+            <ul class="sorting-list">
+              <li>
+                <a class="enable" href="">По цене</a>
+              </li>
+              <li>
+                <a href="">По типу</a>
+              </li>
+              <li>
+                <a href="">По популярности</a>
+              </li>
+            </ul>
+            <ul class="sorting-btn">
+              <li>
+                <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="catalog-main">
-          <div class="container catalog-grid">
-            <div class="filter">
+      </div>
+      <div class="catalog-main">
+        <div class="container catalog-grid">
+          <div class="filter">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
                 <legend>Стоимость</legend>
-                <div class="price-panel"></div>
+                <div class="range-filter-panel">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="
+                        width: 63.33%;
+                        margin-left: 0%
+                      "></div>
+                      <div class="pin pin-min" tabindex="0" aria-label="Установить минимальную цену" style="
+                        left: calc(0% - 10px)
+                      "></div>
+                      <div class="pin pin-max" tabindex="0" aria-label="Установить максимальную цену" style="
+                        left: calc(63.33% - 10px)
+                      "></div>
+                    </div>
+                  </div>
+                  <label for="min-price">от</label>
+                  <input type="text" name="min-price" id="min-price" value="0" pattern="[0-9]{1,}">
+                  <label for="max-price">до</label>
+                  <input type="text" name="max-price" id="max-price" value="5000" pattern="[0-9]{1,}">
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
-                <ul>
-                  <li>
-                    <input type="checkbox" name="dark" id="filter-dark" checked>
-                    <label for="filter-dark">Черный</label>
+                <ul class="color-filter-list">
+                  <li class="color-filter-item">
+                    <input class="color-filter-checkbox visually-hidden" type="checkbox" name="color-black"
+                      id="color-black" checked>
+                    <label for="color-black">Чёрный</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="white" id="filter-white">
-                    <label for="filter-white">Белый</label>
+                  <li class="color-filter-item">
+                    <input class="color-filter-checkbox visually-hidden" type="checkbox" name="color-white"
+                      id="color-white">
+                    <label for="color-white">Белый</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="Bluetooth" id="filter-blue" checked>
-                    <label for="filter-blue">Синий</label>
+                  <li class="color-filter-item">
+                    <input class="color-filter-checkbox visually-hidden" type="checkbox" name="color-blue"
+                      id="color-blue" checked>
+                    <label for="color-blue">Синий</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="red" id="filter-red" checked>
-                    <label for="filter-red">Красный</label>
+                  <li class="color-filter-item">
+                    <input class="color-filter-checkbox visually-hidden" type="checkbox" name="color-red" id="color-red"
+                      checked>
+                    <label for="color-red">Красный</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="pink" id="filter-pink">
-                    <label for="filter-pink">Розовый</label>
+                  <li class="color-filter-item">
+                    <input class="color-filter-checkbox visually-hidden" type="checkbox" name="color-pink"
+                      id="color-pink">
+                    <label for="color-pink">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset>
                 <legend>Bluetooth</legend>
-                <ul>
-                  <li>
-                    <input type="radio" name="filter-bluetooth" id="filter-yes">
-                    <label for="filter-yes">Есть</label>
+                <ul class="bluetooth-filter-list">
+                  <li class="bluetooth-filter-item">
+                    <input class="bluetooth-filter-radio visually-hidden" type="radio" name="bluetooth"
+                      id="bluetooth-yes" value="yes" checked>
+                    <label for="bluetooth-yes">Есть</label>
                   </li>
-                  <li>
-                    <input type="radio" name="filter-bluetooth" id="filter-no" >
-                    <label for="filter-no">Нет</label>
+                  <li class="bluetooth-filter-item">
+                    <input class="bluetooth-filter-radio visually-hidden" type="radio" name="bluetooth"
+                      id="bluetooth-no" value="no">
+                    <label for="bluetooth-no">Нет</label>
                   </li>
                 </ul>
               </fieldset>
               <button type="submit" class="button">Показать</button>
             </form>
-            </div>
-            <div>
+          </div>
+          <div>
             <ul class="catalog-list">
               <li>
                 <a href="product.html">
@@ -268,74 +316,87 @@
                 </div>
               </li>
             </ul>
-            </div>
-            <p></p>
-            <div class="catalog-navigation">
-              <a class="old-page" href="">Назад</a>
-              <ul class="catalog-navigation-wrapper">
-                <li><a class="enable" href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-              </ul>
-              <a class="new-page" href="">Вперед</a>
-            </div>
+          </div>
+          <p></p>
+          <div class="catalog-navigation">
+            <a class="old-page" href="">Назад</a>
+            <ul class="catalog-navigation-wrapper">
+              <li><a class="enable" href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+            </ul>
+            <a class="new-page" href="">Вперед</a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <a class="footer-logo" href="index.html">
-            <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z" fill="#F0C52E"/>
-            </svg>
-          </a>
-          <ul class="user-navigation-footer">
-            <li>
-              <a href="">
-                <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.49996 2.33325C7.69704 2.33325 8.66663 3.37742 8.66663 4.66659C8.66663 5.95575 7.69704 6.99992 6.49996 6.99992C5.30288 6.99992 4.33329 5.95575 4.33329 4.66659C4.33329 3.37742 5.30288 2.33325 6.49996 2.33325ZM6.49996 11.6666C6.49996 11.6666 10.8333 11.6666 10.8333 10.4999C10.8333 9.09992 8.72079 7.58325 6.49996 7.58325C4.27913 7.58325 2.16663 9.09992 2.16663 10.4999C2.16663 11.6666 6.49996 11.6666 6.49996 11.6666Z" fill="#FFC600"/>
-                </svg>
-                <a class="logined-user">Валентин Петухов</a>
-                <a>Войти</a>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg class="header-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
-                  <path d="M2.91675 5.36675H4.66675V11.0834H2.91675V5.36675ZM6.18342 2.91675H7.81675V11.0834H6.18342V2.91675ZM9.45008 7.58342H11.0834V11.0834H9.45008V7.58342Z" fill="#FFC600"/>
-                  <line x1="0.141846" y1="7.13989" x2="-210.461" y2="7.13987" stroke="black"/>
-                  </g>
-                  <defs>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="footer-logo" href="index.html">
+          <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z"
+              fill="#F0C52E" />
+          </svg>
+        </a>
+        <ul class="user-navigation-footer">
+          <li>
+            <a href="profile.html">
+              <svg class="header-icon" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.49996 2.33325C7.69704 2.33325 8.66663 3.37742 8.66663 4.66659C8.66663 5.95575 7.69704 6.99992 6.49996 6.99992C5.30288 6.99992 4.33329 5.95575 4.33329 4.66659C4.33329 3.37742 5.30288 2.33325 6.49996 2.33325ZM6.49996 11.6666C6.49996 11.6666 10.8333 11.6666 10.8333 10.4999C10.8333 9.09992 8.72079 7.58325 6.49996 7.58325C4.27913 7.58325 2.16663 9.09992 2.16663 10.4999C2.16663 11.6666 6.49996 11.6666 6.49996 11.6666Z"
+                  fill="#FFC600" />
+              </svg>
+              <span class="logined-user">Валентин Петухов</span>
+              Вsйти
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="header-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M2.91675 5.36675H4.66675V11.0834H2.91675V5.36675ZM6.18342 2.91675H7.81675V11.0834H6.18342V2.91675ZM9.45008 7.58342H11.0834V11.0834H9.45008V7.58342Z"
+                    fill="#FFC600" />
+                  <line x1="0.141846" y1="7.13989" x2="-210.461" y2="7.13987" stroke="black" />
+                </g>
+                <defs>
                   <clipPath id="clip0">
-                  <rect width="14" height="14" fill="white"/>
+                    <rect width="14" height="14" fill="white" />
                   </clipPath>
-                  </defs>
-                </svg>
-                Сравнить
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg class="header-icon"width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
-                  <path d="M9.86215 2.52161C9.79278 2.43982 9.69341 2.39307 9.58927 2.39307H7.65774V3.41871C7.65774 3.88999 7.25359 4.27341 6.75684 4.27341C6.26008 4.27341 5.85593 3.88999 5.85593 3.41871V2.39307H4.05413V3.41871C4.05413 3.88999 3.64999 4.27341 3.15323 4.27341C2.65648 4.27341 2.25233 3.88999 2.25233 3.41871V2.39307H0.32089C0.216656 2.39307 0.117286 2.43982 0.0479169 2.52161C-0.0215425 2.60341 -0.0544254 2.71247 -0.0425335 2.82136L0.605665 8.78452C0.617737 9.45683 1.14179 9.9999 1.78431 9.9999H8.12584C8.76828 9.9999 9.29233 9.45683 9.30449 8.78443L9.95269 2.82127C9.96449 2.71247 9.93161 2.60341 9.86215 2.52161Z" fill="#FFC600"/>
-                  <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" fill="#FFC600"/>
-                  <line x1="9.39233" y1="4.95825" x2="22.8389" y2="4.95825" stroke="black"/>
-                  </g>
-                  <defs>
+                </defs>
+              </svg>
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="header-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M9.86215 2.52161C9.79278 2.43982 9.69341 2.39307 9.58927 2.39307H7.65774V3.41871C7.65774 3.88999 7.25359 4.27341 6.75684 4.27341C6.26008 4.27341 5.85593 3.88999 5.85593 3.41871V2.39307H4.05413V3.41871C4.05413 3.88999 3.64999 4.27341 3.15323 4.27341C2.65648 4.27341 2.25233 3.88999 2.25233 3.41871V2.39307H0.32089C0.216656 2.39307 0.117286 2.43982 0.0479169 2.52161C-0.0215425 2.60341 -0.0544254 2.71247 -0.0425335 2.82136L0.605665 8.78452C0.617737 9.45683 1.14179 9.9999 1.78431 9.9999H8.12584C8.76828 9.9999 9.29233 9.45683 9.30449 8.78443L9.95269 2.82127C9.96449 2.71247 9.93161 2.60341 9.86215 2.52161Z"
+                    fill="#FFC600" />
+                  <path
+                    d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
+                    fill="#FFC600" />
+                  <line x1="9.39233" y1="4.95825" x2="22.8389" y2="4.95825" stroke="black" />
+                </g>
+                <defs>
                   <clipPath id="clip0">
-                  <rect width="10" height="10" fill="white"/>
+                    <rect width="10" height="10" fill="white" />
                   </clipPath>
-                  </defs>
-                </svg>
+                </defs>
+              </svg>
               Корзина
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="main-navigation-footer footer-grid">
         <p>г. Москва, ул. Строителей, 15</p>
         <ul class="main-footer-wrapper">
@@ -368,6 +429,8 @@
         </a>
       </div>
     </div>
-    </footer>
-  </body>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

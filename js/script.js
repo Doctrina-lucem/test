@@ -1,6 +1,16 @@
 var loginLink = document.querySelector(".contacts button");
-var writeusPopup = document.querySelector(".write-us-popup")
-var popupclose = document.querySelector(".close-window")
+var writeusPopup = document.querySelector(".write-us-popup");
+var popupclose = document.querySelector(".close-window");
+var catalogPopup = document.querySelector(".catalog-popup-hide");
+var catalogPopuplink = document.querySelector(".catalog-popup-open");
+catalogPopuplink.addEventListener("mouseover", function(evt) {
+  evt.preventDefault()
+  catalogPopup.classList.add("catalog-popup")
+});
+catalogPopuplink.addEventListener("mouseout", function(evt) {
+  evt.preventDefault()
+  catalogPopup.classList.remove("catalog-popup")
+});
 loginLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeusPopup.classList.add("modal-show");
